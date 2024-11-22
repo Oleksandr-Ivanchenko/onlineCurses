@@ -1,0 +1,157 @@
+@use '../../styles/utils/variables.module' as *;
+@use '../../styles/utils/reset.scss' as *;
+
+.faq {
+  max-width: 1340px;
+  margin: 50px auto;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 63px;
+    font-family: $font-family-title;
+    color: $color-primary;
+  }
+
+  &__form-title {
+    margin: 0 auto;
+    font-size: 42px;
+    line-height: 63px;
+    font-family: $font-family-title;
+    color: white;
+  }
+
+  &__content {
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      gap: 20px;
+      flex-direction: column;
+      
+    }
+  }
+
+  &__messages {
+    flex: 1;
+    max-width: 772px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    background-color: $color-text-primary;
+    border-radius: 16px;
+    border: 1px solid $color-primary;
+    transition: all 0.3s ease;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: $font-family-base;
+      font-size: 20px;
+      font-weight: 500;
+      color: $color-text-secondary;
+      cursor: pointer;
+
+      .faq__item-plus-btn {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $color-text-primary;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+    }
+
+    &-body {
+      margin-top: 20px;
+      padding-top: 20px;
+      font-family: $font-family-base;
+      font-size: 18px;
+      color: $color-text-secondary;
+      border-top: 1px solid $color-primary;
+      word-wrap: break-word;
+    }
+  }
+  
+  &__form-container {
+    flex: 1;
+    gap: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    background-color: $color-primary;
+    color: $color-text-primary;
+    border-radius: 14px;
+
+    &-title {
+      margin-bottom: 20px;
+      padding-bottom: 80px;
+      font-family: $font-family-title;
+      font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+     
+    }
+
+    .faq__form {
+      padding-top: 40px;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid white;
+      
+      &-input {
+        width: 424px;
+        height: 64px;
+        border-radius: 4px;
+        padding: 12px 14px;
+        font-family: $font-family-base;
+        font-size: 18px;
+        color: $color-text-secondary;
+        border: 1px solid #ECECEC;
+        box-sizing: border-box;
+
+        &::placeholder {
+          color: $color-text-secondary;
+        }
+
+        &--text {
+          height: 114px;
+          resize: none;
+        }
+      }
+
+      &-submit {
+        margin-top: 20px;
+        width: 235px;
+        height: 58px;
+        border-radius: 14px;
+        background-color: $color-text-primary;
+        color: $color-primary;
+        font-family: $font-family-base;
+        font-size: 20px;
+        cursor: pointer;
+        border: none;
+        align-self: center;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: $color-text-secondary;
+          color: $color-text-primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+@use '../../styles/utils/variables.module' as *;
+@use '../../styles/utils/reset.scss' as *;
+
+.advantages {
+  margin: 0 auto;
+  align-items: center;
+  background-color: $color-background;
+  
+  &__main {
+    padding-top: 70px;
+  }
+
+  &__title-container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $color-text-primary;
+    border-radius: 16px;
+  }
+
+  &__title {
+    display: inline;
+    font-family: $font-family-title;
+    font-size: 42px;
+    line-height: 63px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &__section-container {
+    max-width: $container-width;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  &__section {
+    margin-top: 20px;
+    width: 431px;
+    height: 274px;
+    margin-bottom: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: $color-text-primary;
+    border-radius: 16px;
+    font-family: $font-family-title;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &--1, &--2, &--3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 14px;
+
+    @media (max-width: $breakpoint-lg) {
+      font-size: 12px;
+    }
+    }
+
+    &:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__icon {
+    margin-bottom: 10px;
+    font-size: 48px;
+  }
+
+  &__section-title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &__text {
+    font-family: $font-family-base;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: $color-text-secondary;
+  }
+
+  @media (max-width: $breakpoint-lg) { 
+      font-size: 15px;
+    &__section-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__section {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+}

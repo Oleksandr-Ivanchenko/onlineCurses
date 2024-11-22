@@ -1,0 +1,105 @@
+@use '../../styles/utils/variables.module' as *;
+@use '../../styles/utils/reset.scss' as *;
+
+.lead-magnet {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: $color-primary;
+  padding: $padding;
+
+  &__container {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 63px;
+    font-family: $font-family-title;
+    color: $color-text-primary;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    font-family: $font-family-base;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-text-primary;
+  }
+
+  &__form-container {
+    padding-left: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 658px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__label {
+      margin-bottom: 8px;
+      font-family: $font-family-base;
+      font-size: 16px;
+      color: $color-text-primary;
+    }
+
+    &__input {
+      width: 100%;
+      height: 62px;
+      margin-bottom: 24px;
+      max-width: 658px;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      color: $color-text-secondary;
+
+      &::placeholder {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+    }
+
+    &__button {
+      width: 213px;
+      height: 58px;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 38px;
+      background-color: $color-text-primary;
+      color: $color-primary;
+
+      &:hover {
+        background-color: $color-text-secondary;
+        color: $color-text-primary;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+

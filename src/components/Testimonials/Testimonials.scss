@@ -1,0 +1,89 @@
+@use '../../styles/utils/variables.module' as *;
+@use '../../styles/utils/reset.scss' as *;
+
+p {
+  font-family: $font-family-base;
+}
+
+.testimonials {
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1340px;
+  text-align: left;
+
+  &__title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 63px;
+    color: $color-primary;
+    font-family: $font-family-title;
+  }
+
+  &__text {
+    padding-top: 16px;
+  }
+
+  &__carousel {
+    align-items: center;
+    padding: 0 14px;
+    width: 221px;
+    height: 56px;
+    background-color: $color-text-primary;
+    border-radius: 28px;
+    border: 1px solid #BFCCD8;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 50px auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  &__button {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: $color-primary;
+    border: none;
+    border-radius: 50%;
+    
+    &--inactive {
+      background-color: $color-inactive;
+    }
+  }
+
+  &__indicators {
+    width: 69px;
+    display: flex;
+    gap: 2px;
+  }
+
+  &__indicator {
+    width: 13px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: #BFCCD8;
+
+    &--active {
+      width: 24px;
+      background-color: $color-primary;
+      transition: background-color 0.3s, width 0.3s;
+    }
+  }
+}

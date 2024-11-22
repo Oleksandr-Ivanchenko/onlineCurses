@@ -1,0 +1,195 @@
+@use '../../styles/utils/variables.module' as *;
+@use '../../styles/utils/reset.scss' as *;
+
+.our-courses {
+  max-width: $container-width;
+  margin: 50px auto; 
+
+  &__title {
+    font-family: $font-family-title;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 63px;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  &__section {
+    margin: 20px 0;
+    padding: 0 40px 40px 40px;
+    border: 2px solid $color-primary;
+    border-radius: 20px;
+    font-family: $font-family-title;
+
+    h2 {
+      max-width: $container-width;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    h4 {
+      padding-top: 16px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: $color-primary;
+    }
+
+    h5 {
+      margin: 16px 40px 8px 0;
+      font-family: $font-family-base;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      color: $color-text-secondary;
+    }
+  }
+
+
+  &__subtitle-container {
+    margin: 40px 0;
+    gap: 15px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+  }
+
+  &__subtitle-wrapper {
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__subtitle {
+    margin-left: 14px;
+  }
+
+
+
+  &__details-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: $font-family-base;
+    color: $color-text-secondary;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__icons {
+    margin: 40px 0;
+    gap: 12px; 
+    display: flex;
+    
+
+    & > div {
+      width: 128px;
+      height: 47px;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $font-family-base;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      border-radius: 45px;
+      background-color: $color-background;
+
+      .our-courses__icon {
+        margin-right: 8px;
+      }
+      
+      p {
+        margin: 0; 
+        font-family: $font-family-base;
+      }
+    }
+  }
+
+  &__model {
+    &-title {
+      font-family: $font-family-title;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: $color-text-secondary;
+      
+    }
+
+    &-item {
+      margin-bottom: 15px;
+      gap: 15px;
+      display: flex;
+      align-items: center;
+      color: $color-text-secondary;
+      font-family: $font-family-base;
+    }
+
+    &-icon {
+      margin-right: 10px;
+    }
+  }
+
+  &__price {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: $font-family-base;
+
+    &-label {
+      padding-right: 16px;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 45px;
+      color: $color-primary;
+      text-transform: uppercase;
+      border-right: 2px solid $color-primary;
+      
+    }
+
+    &-amount {
+      padding-left: 16px;
+      font-weight: 700;
+      font-size: 22px;
+      color: $color-primary;
+    }
+  }
+
+  &__button-container {
+    .our-courses__button {
+      margin-top: 40px;
+      width: 185px;
+      height: 58px;
+      padding: 15px 25px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 5px;
+      border: none;
+      background-color: $color-primary;
+      color: $color-text-primary;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: margin-right 1s, color 250ms, transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;;
+
+      &:hover {
+        transform: translateY(-3px);
+        background-color: $color-text-secondary;
+      }
+
+      &:focus {
+        outline: none; 
+      }
+    }
+  }
+}
