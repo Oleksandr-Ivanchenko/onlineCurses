@@ -11,7 +11,6 @@ This template provides a minimal setup to get React working in Vite with Hot Mod
 - **BEM (Block Element Modifier)**: A methodology for writing clean and reusable CSS.
 - **ESLint**: Linting tool to ensure code quality and consistency.
 
-
 ## Demo
 You can view the demo here:
 
