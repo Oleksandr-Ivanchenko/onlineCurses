@@ -9,7 +9,6 @@ export default defineConfig({
         api: 'modern'  
       }
     }
-  }, 
-  base: '/onlineCurses/',
+  }
 });
 
