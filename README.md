@@ -15,7 +15,7 @@ This template provides a minimal setup to get React working in Vite with Hot Mod
 ## Demo
 You can view the demo here:
 
-[DEMO LINK](https://github.com/IvanchenkoDev/cursesReactViteTS.git)
+[DEMO LINK](https://Oleksandr-Ivanchenko.github.io/onlineCurses/)
 
 ## Dependencies
 
